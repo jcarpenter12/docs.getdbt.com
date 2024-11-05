@@ -407,7 +407,7 @@ my-profile:
       method: oauth
       project: abc-123
       dataset: my_dataset
-      quota_project: my-bg-quota-project
+      quota_project: my-bq-quota-project
 ```
 
 ### Running Python models on Dataproc
