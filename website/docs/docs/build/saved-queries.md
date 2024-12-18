@@ -154,8 +154,6 @@ saved_queries:
 </File>
 </VersionBlock>
 
-<VersionBlock firstVersion="1.7">
-
 #### Project-level saved queries
 
 To enable saved queries at the project level, you can set the `saved-queries` configuration in the [`dbt_project.yml` file](/reference/dbt_project.yml). This saves you time in configuring saved queries in each file:
@@ -165,14 +163,12 @@ To enable saved queries at the project level, you can set the `saved-queries` co
 ```yaml
 saved-queries:
   my_saved_query:
-    config:
-      +cache:
-        enabled: true
+    +cache:
+      enabled: true
 ```
 </File>
 
 For more information on `dbt_project.yml` and config naming conventions, see the [dbt_project.yml reference page](/reference/dbt_project.yml#naming-convention).
-</VersionBlock>
 
 To build `saved_queries`, use the [`--resource-type` flag](/reference/global-configs/resource-type) and run the command `dbt build --resource-type saved_query`.
 

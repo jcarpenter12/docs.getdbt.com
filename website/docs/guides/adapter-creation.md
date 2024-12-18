@@ -558,7 +558,7 @@ See [this GitHub discussion](https://github.com/dbt-labs/dbt-core/discussions/54
 
 ### Behavior change flags
 
-Starting in `dbt-adapters==1.5.0` and `dbt-core==1.8.7`, adapter maintainers can implement their own behavior change flags. Refer to [Behavior changes](https://docs.getdbt.com/reference/global-configs/behavior-changes)for more information. 
+Starting in `dbt-adapters==1.5.0` and `dbt-core==1.8.7`, adapter maintainers can implement their own behavior change flags. Refer to [Behavior changes](https://docs.getdbt.com/reference/global-configs/behavior-changes) for more information. 
 
 Behavior Flags are not intended to be long-living feature flags. They should be implemented with the expectation that the behavior will be the default within an expected period of time. To implement a behavior change flag, you must provide a name for the flag, a default setting (`True` / `False`), an optional source, and a description and/or a link to the flag's documentation on docs.getdbt.com. 
 
@@ -666,7 +666,7 @@ In order to enable the [`dbt init` command](/reference/commands/init) to prompt 
 
 See examples:
 
-- [dbt-postgres](https://github.com/dbt-labs/dbt-core/blob/main/plugins/postgres/dbt/include/postgres/profile_template.yml)
+- [dbt-postgres](https://github.com/dbt-labs/dbt-postgres/blob/main/dbt/include/postgres/profile_template.yml)
 - [dbt-redshift](https://github.com/dbt-labs/dbt-redshift/blob/main/dbt/include/redshift/profile_template.yml)
 - [dbt-snowflake](https://github.com/dbt-labs/dbt-snowflake/blob/main/dbt/include/snowflake/profile_template.yml)
 - [dbt-bigquery](https://github.com/dbt-labs/dbt-bigquery/blob/main/dbt/include/bigquery/profile_template.yml)
@@ -1345,8 +1345,6 @@ Breaking this down:
    <Lightbox src="/img/adapter-guide/3-additional-resources.png" title="more resources"/>
 - Implementation instructions:
     <Lightbox src="/img/adapter-guide/4-installation.png" title="more installation"/>
-- Future plans
-    <Lightbox src="/img/adapter-guide/5-coming-up.png" title="coming soon"/>
 - Contributor recognition (if applicable)
     <Lightbox src="/img/adapter-guide/6-thank-contribs.png" title="thank yous"/>
 
